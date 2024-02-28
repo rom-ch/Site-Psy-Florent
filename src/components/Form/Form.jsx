@@ -89,7 +89,7 @@ function Form() {
       className={styles.form}
       onSubmit={handleSubmit}
       name="contact"
-      method="POST"
+      method="post"
       data-netlify="true"
     >
       <h3>Me Contacter</h3>
