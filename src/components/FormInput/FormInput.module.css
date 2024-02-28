@@ -1,0 +1,38 @@
+.formInput {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.formInput:has(input[name="email"]) {
+  width: 100%;
+}
+
+.formInput input {
+  padding: 1rem;
+  margin-block: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  border-color: var(--clr-accent);
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+input:invalid[focused="true"] {
+  border-color: red;
+}
+
+input:invalid[focused="true"] ~ span {
+  display: block;
+}
+
+
+@media screen and (max-width: 576px) {
+  .formInput {
+    width: 100%;
+  }
+}

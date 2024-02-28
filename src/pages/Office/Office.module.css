@@ -1,0 +1,52 @@
+.cab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.cab-img {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cab-content {
+  width: 80%;
+  text-align: justify;
+  color: var(--clr-font-400);
+}
+
+.cab-content p {
+  margin-bottom: 1rem;
+}
+
+.map {
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.map iframe {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .cab {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .cab-img {
+    order: 2;
+  }
+
+  .cab-content {
+    width: 100%;
+  }
+
+  .map {
+    height: 350px;
+  }
+}

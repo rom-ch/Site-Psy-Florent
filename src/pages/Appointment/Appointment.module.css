@@ -1,0 +1,28 @@
+.appointments-links {
+  margin-bottom: 2rem;
+}
+
+.appointments-links ul {
+  list-style-type: circle;
+}
+
+.appointments-links a {
+  color: inherit;
+  font-weight: 500;
+}
+
+.price h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.price p {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .appointments-links {
+    margin-bottom: 2rem;
+  }
+}
