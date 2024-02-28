@@ -7,13 +7,16 @@
     <title>Vite + React</title>
   </head>
   <body>
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
+    <div id="root"></div>
+
+    <form name="contact" data-netlify="true" hidden>
+      <input type="text" id="lastname" name="lastName" />
+      <input type="text" id="firstname" name="firstName" />
+      <input type="email" id="email" name="email" />
+      <input type="text" id="object" name="object" />
+      <textarea id="message" name="message"></textarea>
     </form>
 
-    <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

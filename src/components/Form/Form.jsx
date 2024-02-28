@@ -89,7 +89,7 @@ function Form() {
       className={styles.form}
       onSubmit={handleSubmit}
       name="contact"
-      method="post"
+      method="POST"
     >
       <input type="hidden" value="contact" name="form-name" />
       <h3>Me Contacter</h3>
