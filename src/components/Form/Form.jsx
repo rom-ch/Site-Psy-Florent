@@ -90,8 +90,9 @@ function Form() {
       onSubmit="submit"
       name="contact"
       method="post"
-      data-netlify="true"
+      data-netlify={true}
     >
+      <input type="hidden" value="contact" name="form-name" />
       <h3>Me Contacter</h3>
       <div className={styles["input-container-row"]}>
         {inputsRow.map(input => (
