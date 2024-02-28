@@ -85,7 +85,12 @@ function Form() {
   }
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit}>
+    <form
+      className={styles.form}
+      onSubmit={handleSubmit}
+      name="contact"
+      data-netlify="true"
+    >
       <input type="hidden" value="contact" name="form-name" />
       <h3>Me Contacter</h3>
       <div className={styles["input-container-row"]}>
