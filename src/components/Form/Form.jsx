@@ -1,10 +1,10 @@
 import { useState } from "react";
 import FormInput from "../FormInput/FormInput";
 import styles from "./Form.module.css";
-import SubmittedMessage from "../SubmittedMessage/SubmittedMessage";
+// import SubmittedMessage from "../SubmittedMessage/SubmittedMessage";
 
 function Form() {
-  const [formSubmited, setFormSubmited] = useState(false);
+  // const [formSubmited, setFormSubmited] = useState(false);
   const [values, setValues] = useState({
     lastName: "",
     firstName: "",
@@ -57,21 +57,21 @@ function Form() {
     },
   ];
 
-  const handleSubmit = e => {
-    e.preventDefault();
+  // const handleSubmit = e => {
+  //   e.preventDefault();
 
-    setFormSubmited(true);
-    setValues({
-      lastName: "",
-      firstName: "",
-      email: "",
-      object: "",
-      message: "",
-    });
-    setTimeout(() => {
-      setFormSubmited(false);
-    }, 5000);
-  };
+  //   setFormSubmited(true);
+  //   setValues({
+  //     lastName: "",
+  //     firstName: "",
+  //     email: "",
+  //     object: "",
+  //     message: "",
+  //   });
+  //   setTimeout(() => {
+  //     setFormSubmited(false);
+  //   }, 5000);
+  // };
 
   const handleChange = e => {
     setValues({
@@ -80,14 +80,14 @@ function Form() {
     });
   };
 
-  if (formSubmited) {
-    return <SubmittedMessage />;
-  }
+  // if (formSubmited) {
+  //   return <SubmittedMessage />;
+  // }
 
   return (
     <form
       className={styles.form}
-      onSubmit={handleSubmit}
+      onSubmit="submit"
       name="contact"
       method="post"
       data-netlify="true"
