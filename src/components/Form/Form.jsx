@@ -90,7 +90,7 @@ function Form() {
       onSubmit={handleSubmit}
       name="contact"
       method="POST"
-      netlify
+      data-netlify="true"
     >
       <h3>Me Contacter</h3>
       <div className={styles["input-container-row"]}>
