@@ -12,8 +12,8 @@ const encode = data => {
 function Form() {
   const [formSubmited, setFormSubmited] = useState(false);
   const [values, setValues] = useState({
-    lastName: "",
-    firstName: "",
+    nom: "",
+    prénom: "",
     email: "",
     object: "",
     message: "",
