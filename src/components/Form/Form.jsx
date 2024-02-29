@@ -56,7 +56,7 @@ function Form() {
     {
       key: 4,
       id: "obect",
-      name: "object",
+      name: "objet",
       type: "text",
       label: "Objet :",
       placeholder: "Objet",
@@ -123,7 +123,7 @@ function Form() {
         ))}
       </div>
       <div className={styles.textarea}>
-        <label>Message :</label>
+        <label htmlFor="message">Message :</label>
         <textarea
           id="message"
           name="message"
