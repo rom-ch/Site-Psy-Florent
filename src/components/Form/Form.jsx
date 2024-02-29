@@ -1,10 +1,10 @@
 import { useState } from "react";
 import FormInput from "../FormInput/FormInput";
 import styles from "./Form.module.css";
-// import SubmittedMessage from "../SubmittedMessage/SubmittedMessage";
+import SubmittedMessage from "../SubmittedMessage/SubmittedMessage";
 
 function Form() {
-  // const [formSubmited, setFormSubmited] = useState(false);
+  const [formSubmited, setFormSubmited] = useState(false);
   const [values, setValues] = useState({
     lastName: "",
     firstName: "",
@@ -57,21 +57,29 @@ function Form() {
     },
   ];
 
-  // const handleSubmit = e => {
-  //   e.preventDefault();
+  const handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: JSON.stringify({ "form-name": "contact", values }),
+    })
+      .then(() => console.log("success"))
+      .catch(error => alert(error));
 
-  //   setFormSubmited(true);
-  //   setValues({
-  //     lastName: "",
-  //     firstName: "",
-  //     email: "",
-  //     object: "",
-  //     message: "",
-  //   });
-  //   setTimeout(() => {
-  //     setFormSubmited(false);
-  //   }, 5000);
-  // };
+    e.preventDefault();
+
+    setFormSubmited(true);
+    setValues({
+      lastName: "",
+      firstName: "",
+      email: "",
+      object: "",
+      message: "",
+    });
+    setTimeout(() => {
+      setFormSubmited(false);
+    }, 5000);
+  };
 
   const handleChange = e => {
     setValues({
@@ -80,17 +88,12 @@ function Form() {
     });
   };
 
-  // if (formSubmited) {
-  //   return <SubmittedMessage />;
-  // }
+  if (formSubmited) {
+    return <SubmittedMessage />;
+  }
 
   return (
-    <form
-      className={styles.form}
-      onSubmit="submit"
-      name="contact"
-      method="POST"
-    >
+    <form className={styles.form} onSubmit={handleSubmit} name="contact">
       <input type="hidden" value="contact" name="form-name" />
       <h3>Me Contacter</h3>
       <div className={styles["input-container-row"]}>
