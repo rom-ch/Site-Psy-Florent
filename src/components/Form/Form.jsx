@@ -3,6 +3,12 @@ import FormInput from "../FormInput/FormInput";
 import styles from "./Form.module.css";
 import SubmittedMessage from "../SubmittedMessage/SubmittedMessage";
 
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 function Form() {
   const [formSubmited, setFormSubmited] = useState(false);
   const [values, setValues] = useState({
@@ -61,7 +67,7 @@ function Form() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: JSON.stringify({ "form-name": "contact", values }),
+      body: encode({ "form-name": "contact", ...values }),
     })
       .then(() => console.log("success"))
       .catch(error => alert(error));
@@ -93,7 +99,7 @@ function Form() {
   }
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit} name="contact">
+    <form className={styles.form} onSubmit={handleSubmit}>
       <input type="hidden" value="contact" name="form-name" />
       <h3>Me Contacter</h3>
       <div className={styles["input-container-row"]}>
