@@ -12,8 +12,8 @@ const encode = data => {
 function Form() {
   const [formSubmited, setFormSubmited] = useState(false);
   const [values, setValues] = useState({
-    nom: "",
-    prénom: "",
+    lastName: "",
+    firstName: "",
     email: "",
     object: "",
     message: "",
@@ -23,7 +23,7 @@ function Form() {
     {
       key: 1,
       id: "lastname",
-      name: "lastName",
+      name: "nom",
       type: "text",
       label: "Nom :",
       placeholder: "Nom",
@@ -33,7 +33,7 @@ function Form() {
     {
       key: 2,
       id: "firstname",
-      name: "firstName",
+      name: "prénom",
       type: "text",
       label: "Prénom :",
       placeholder: "Prénom",
