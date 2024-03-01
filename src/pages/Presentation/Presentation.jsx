@@ -13,13 +13,13 @@ function Presentation() {
             name="description"
             content="Présentation de mon parcours en tant que psychologue."
           />
-          <link rel="canonical" href="#" />
+          <link rel="canonical" href="https://psychologue-florentchauvin.com/qui-suis-je" />
           <meta property="og:title" content="Qui suis-je ? | Florent Chauvin" />
           <meta
             property="og:description"
             content="Présentation de mon parcours en tant que psychologue."
           />
-          <meta property="og:url" content="#"></meta>
+          <meta property="og:url" content="https://psychologue-florentchauvin.com/qui-suis-je" />
           <meta property="og:site_name" content="Florent Chauvin" />
           <meta property="og:type" content="website" />
         </Helmet>

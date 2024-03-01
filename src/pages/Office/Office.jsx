@@ -12,13 +12,13 @@ function Office() {
             name="description"
             content="Adresse du cabinet et présentation de l'équipe pluridisciplinaire."
           />
-          <link rel="canonical" href="#" />
+          <link rel="canonical" href="https://psychologue-florentchauvin.com/le-cabinet" />
           <meta property="og:title" content="Le cabinet | Florent Chauvin" />
           <meta
             property="og:description"
             content="Adresse du cabinet et présentation de l'équipe pluridisciplinaire."
           />
-          <meta property="og:url" content="#"></meta>
+          <meta property="og:url" content="https://psychologue-florentchauvin.com/le-cabinet" />
           <meta property="og:site_name" content="Florent Chauvin" />
           <meta property="og:type" content="website" />
         </Helmet>

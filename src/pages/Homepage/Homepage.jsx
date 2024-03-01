@@ -16,7 +16,7 @@ function Homepage() {
             name="description"
             content="Florent Chauvin est un psychologue clinicien et psychothérapeute qui exerce à Cergy(95). Il reçoit des enfants, des adolescents (réalisation de bilans psychologiques) et des adultes."
           />
-          <link rel="canonical" href="#" />
+          <link rel="canonical" href="https://psychologue-florentchauvin.com/accueil" />
           <meta
             property="og:title"
             content="Florent Chauvin : Psychologue clinicien, Cergy"
@@ -25,7 +25,7 @@ function Homepage() {
             property="og:description"
             content="Florent Chauvin est un psychologue clinicien et psychothérapeute qui exerce à Cergy(95). Il reçoit des enfants, des adolescents (réalisation de bilans psychologiques) et des adultes. "
           />
-          <meta property="og:url" content="#"></meta>
+          <meta property="og:url" content="https://psychologue-florentchauvin.com/accueil" />
           <meta property="og:site_name" content="Florent Chauvin" />
           <meta property="og:type" content="website" />
         </Helmet>

@@ -14,13 +14,13 @@ function Work() {
             name="description"
             content="Informations sur le public que je reçois et ma manière de travailler."
           />
-          <link rel="canonical" href="#" />
+          <link rel="canonical" href="https://psychologue-florentchauvin.com/ma-pratique" />
           <meta property="og:title" content="Ma pratique | Florent Chauvin" />
           <meta
             property="og:description"
             content="Informations sur le public que je reçois et ma manière de travailler."
           />
-          <meta property="og:url" content="#"></meta>
+          <meta property="og:url" content="https://psychologue-florentchauvin.com/ma-pratique" />
           <meta property="og:site_name" content="Florent Chauvin" />
           <meta property="og:type" content="website" />
         </Helmet>
