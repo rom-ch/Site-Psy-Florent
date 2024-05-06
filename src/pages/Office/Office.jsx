@@ -12,13 +12,19 @@ function Office() {
             name="description"
             content="Adresse du cabinet et présentation de l'équipe pluridisciplinaire."
           />
-          <link rel="canonical" href="https://psychologue-florentchauvin.com/le-cabinet" />
+          <link
+            rel="canonical"
+            href="https://psychologue-florentchauvin.com/le-cabinet"
+          />
           <meta property="og:title" content="Le cabinet | Florent Chauvin" />
           <meta
             property="og:description"
             content="Adresse du cabinet et présentation de l'équipe pluridisciplinaire."
           />
-          <meta property="og:url" content="https://psychologue-florentchauvin.com/le-cabinet" />
+          <meta
+            property="og:url"
+            content="https://psychologue-florentchauvin.com/le-cabinet"
+          />
           <meta property="og:site_name" content="Florent Chauvin" />
           <meta property="og:type" content="website" />
         </Helmet>
@@ -43,8 +49,7 @@ function Office() {
                 sophrologue et un psychologue.
               </p>
               <span>
-                <strong>Adresse : </strong>Immeuble les Naïades, parvis de la
-                Préfecture, 95000 Cergy
+                <strong>Adresse : </strong>8 rue du ponceau, 95000 Cergy
               </span>
             </div>
             <div className={styles["cab-img"]}>
@@ -53,11 +58,11 @@ function Office() {
           </div>
           <div className={styles.map}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2615.6642581183933!2d2.074435876764098!3d49.035992288191466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6f57342951fa7%3A0xfe5297942ae814c1!2sFlorent%20Chauvin%20-%20Psychologue!5e0!3m2!1sen!2sfr!4v1708628274277!5m2!1sen!2sfr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1307.7681575450606!2d2.0677677444907165!3d49.03842539550331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6f520b7df7595%3A0x64af1d71f22b01e7!2s8%20Rue%20du%20Ponceau%2C%2095000%20Cergy!5e0!3m2!1sen!2sfr!4v1714989546486!5m2!1sen!2sfr"
               width="600"
               height="450"
               style={{ border: 0 }}
-              allowFullScreen
+              allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
