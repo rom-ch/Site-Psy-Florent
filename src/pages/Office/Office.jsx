@@ -35,21 +35,14 @@ function Office() {
           <div className={styles.cab}>
             <div className={styles["cab-content"]}>
               <p>
-                Je vous accueille le mercredi et le vendredi dans un cabinet
+                Je reçois <strong>du lundi au vendredi</strong> dans un cabinet
                 pluridisciplinaire situé{" "}
-                <strong>sur le parvis de la Préfecture</strong> à Cergy. Nous
-                sommes situés
-                <strong>
-                  {" "}
-                  dans l&apos;immeuble Les Naïades, au 1er étage{" "}
-                </strong>
-                (proche de l&apos;escalier menant à la piscine et juste à gauche
-                de la GMF). L&apos;équipe est composée de deux ostéopathes, un
-                médecin gastro-entérologue spécialisé en addictologie, une
-                sophrologue et un psychologue.
+                <strong>dans le quartier des ponceaux</strong> à Cergy. Je
+                partage actuellement le cabinet avec une psychiatre.
               </p>
               <span>
-                <strong>Adresse : </strong>8 rue du ponceau, 95000 Cergy
+                <strong>Adresse : </strong>8 rue du ponceau, 95000 Cergy (2ème
+                étage)
               </span>
             </div>
             <div className={styles["cab-img"]}>
