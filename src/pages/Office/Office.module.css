@@ -9,6 +9,7 @@
 .cab-img {
   border-radius: 5px;
   overflow: hidden;
+  width: 350px;
 }
 
 .cab-content {
